@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--
+    Program name: hw1.html
+    Author: Riya Deshmane
+    Date created: 2/15/26
+    Date last edited: 2/25/26
+    Version: 2.0
+    Description: Patient registration form for Mouse Pediatrics clinic.
+-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="hw1.css">
+    <title>New Patient Registration | Mouse Pediatric Clinic</title>
+</head>
+<body>
+
+<!-- Header begins here -->
+<header>
+    <table width="100%">
+        <tr>
+            <td align="left" valign="middle" width="20%">
+                <img src="cliniclogo1.png" alt="Mouse Pediatrics Logo" width="70px" id="logo"/>
+            </td>
+            <td align="center" valign="middle">
+                <h2>Mouse Pediatrics</h2>
+            </td>
+            <td align="right" valign="middle" width="20%">
+                <p id="today">Today's Date: <span id="dateDisplay"></span></p>
+            </td>
+        </tr>
+    </table>
+</header>
+
+<hr>
+
+<!--FORM -->
+<form action="thankyou.html">
+    <table class="form-table" cellspacing="0" cellpadding="5">
+
+        <tr>
+            <th colspan="2">Create Patient Account Portal</th>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="fname">First Name:</label></td>
+            <td><input type="text" id="fname" name="fname" maxlength="30" required placeholder="First Name"></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="minitial">Middle Initial:</label></td>
+            <td><input type="text" id="minitial" name="minitial" maxlength="1" placeholder="M"></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="lname">Last Name:</label></td>
+            <td><input type="text" id="lname" name="lname" maxlength="30" required placeholder="Last Name"></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label>Gender:</label></td>
+            <td>
+                <input type="radio" id="g1" name="gender" value="Male"> <label for="g1">Male</label>&nbsp;
+                <input type="radio" id="g2" name="gender" value="Female"> <label for="g2">Female</label>&nbsp;
+                <input type="radio" id="g3" name="gender" value="Other"> <label for="g3">Other</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" id="dob" name="dob" required></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required placeholder="name@domain.com"></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="ssn">SSN:</label></td>
+            <td><input type="password" id="ssn" name="ssn" minlength="9" maxlength="11" required placeholder="123-45-6789"></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="phonenum">Phone Number:</label></td>
+            <td><input type="text" id="phonenum" name="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890"></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label>Vaccinated?</label></td>
+            <td>
+                <input type="radio" id="vax1" name="vaccinated" value="Yes"> <label for="vax1">Yes</label>&nbsp;
+                <input type="radio" id="vax2" name="vaccinated" value="No"> <label for="vax2">No</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label>Has Insurance?</label></td>
+            <td>
+                <input type="radio" id="ins1" name="insurance" value="Yes"> <label for="ins1">Yes</label>&nbsp;
+                <input type="radio" id="ins2" name="insurance" value="No"> <label for="ins2">No</label>
+            </td>
+        </tr>
+
+        <tr><td colspan="2"><hr></td></tr>
+
+        <tr>
+            <th colspan="2">Patient's Contact Information</th>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="address1">Address:</label></td>
+            <td><input type="text" id="address1" name="address1" maxlength="30" required placeholder="1234 Mousey Lane"></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="address2">Address 2:</label></td>
+            <td><input type="text" id="address2" name="address2" maxlength="30" placeholder="Suite 123"></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="city">City:</label></td>
+            <td><input type="text" id="city" name="city" maxlength="30" required placeholder="Houston"></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="state">State:</label></td>
+            <td>
+                <select id="state" name="state" required>
+                    <option selected disabled>Please Select One</option>
+                    <option value="AL">Alabama</option><option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option><option value="AR">Arkansas</option>
+                    <option value="CA">California</option><option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option><option value="DE">Delaware</option>
+                    <option value="DC">District of Columbia</option><option value="FL">Florida</option>
+                    <option value="GA">Georgia</option><option value="GU">Guam</option>
+                    <option value="HI">Hawaii</option><option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option><option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option><option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option><option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option><option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option><option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option><option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option><option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option><option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option><option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option><option value="NY">New York</option>
+                    <option value="NC">North Carolina</option><option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option><option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option><option value="PA">Pennsylvania</option>
+                    <option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option><option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option><option value="TX">Texas</option>
+                    <option value="UT">Utah</option><option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option><option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option><option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="zipcode">Zip Code:</label></td>
+            <td><input type="text" id="zipcode" name="zipcode" minlength="5" maxlength="10" required placeholder="77001"></td>
+        </tr>
+
+        <tr><td colspan="2"><hr></td></tr>
+
+        <tr>
+            <th colspan="2">Patient's Medical History</th>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label>Has the patient had:</label></td>
+            <td>
+                <input type="checkbox" id="cb1" name="history" value="Asthma"> <label for="cb1">Asthma</label>
+                <input type="checkbox" id="cb2" name="history" value="Allergies"> <label for="cb2">Allergies</label>
+                <input type="checkbox" id="cb3" name="history" value="Pneumonia"> <label for="cb3">Pneumonia</label>
+                <input type="checkbox" id="cb4" name="history" value="Seizures"> <label for="cb4">Seizures</label>
+                <input type="checkbox" id="cb5" name="history" value="Anemia"> <label for="cb5">Anemia</label>
+                <input type="checkbox" id="cb6" name="history" value="Broken Bone"> <label for="cb6">Broken Bone</label>
+                <input type="checkbox" id="cb7" name="history" value="Other"> <label for="cb7">Other</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="notes">Additional Notes:</label></td>
+            <td><textarea id="notes" name="notes" rows="4" cols="50" placeholder="Describe current symptoms or other medical history..."></textarea></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="range">Symptom Severity (1-10):</label></td>
+            <td>
+                <input type="range" id="range" name="range" min="1" max="10" value="1">
+                <span id="range-slider">1</span>
+            </td>
+        </tr>
+
+        <tr><td colspan="2"><hr></td></tr>
+
+        <tr>
+            <th colspan="2">Finish Patient Portal Registration</th>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="username">Username:</label></td>
+            <td><input type="text" id="username" name="username" maxlength="20" required placeholder="user123"></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password" minlength="10" maxlength="30" required placeholder="Required"></td>
+        </tr>
+
+        <tr>
+            <td class="label-col"><label for="confirmpass">Confirm Password:</label></td>
+            <td><input type="password" id="confirmpass" name="confirmpass" minlength="10" maxlength="30" required placeholder="Required"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="btn-row" style="padding-top:14px;">
+                <input type="reset" value="Clear and Start Over">
+                &nbsp;&nbsp;
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+
+    </table>
+</form>
+
+<!--Footer begins here-->
+<footer>
+    <p id="footer">&#169; 2026 Mouse Pediatrics &nbsp;|&nbsp; <a href="mailto:contact@mousepediatrics.com" target="_blank" rel="noopener noreferrer">Contact Us!</a></p>
+</footer>
+
+<script src="hw1.js"></script>
+</body>
+</html>
