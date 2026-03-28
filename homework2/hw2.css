@@ -1,0 +1,222 @@
+/*
+    Program name: hw2.css
+    Author: Riya Deshmane
+    Date created: 3/26/26
+    Date last edited: 3/26/26
+    Version: 1.0
+    Description: Stylesheet for Mouse Pediatrics patient registration form.
+*/
+
+/* ====== BODY ====== */
+body {
+    background-color: blanchedalmond;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* ====== HEADER ====== */
+header {
+    width: 100%;
+    background-color: rgb(247, 211, 249);
+    padding: 8px 12px;
+}
+
+/* tag selector */
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* id selector */
+#logo {
+    display: block;
+}
+
+/* id selector */
+#today {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    text-align: right;
+    margin-right: 8px;
+}
+
+/* tag selector */
+p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+}
+
+/* ====== FORM ====== */
+form {
+    width: 600px;
+    margin: 20px auto;
+}
+
+/* class selector */
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* class selector */
+.label-col {
+    text-align: right;
+    width: 220px;
+    white-space: nowrap;
+    padding: 4px 8px 4px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    vertical-align: middle;
+}
+
+.form-table td:nth-child(2) {
+    text-align: left;
+    padding: 4px 0 4px 8px;
+    vertical-align: middle;
+}
+
+/* tag selector */
+th {
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1rem;
+    padding: 10px 0 4px 0;
+    color: #333;
+}
+
+/* attribute selector */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    padding: 4px 6px;
+    border: 1px solid #aaa;
+    background-color: #fff8f0;
+    border-radius: 3px;
+    width: 220px;
+}
+
+select { width: 234px; }
+textarea { width: auto; }
+
+/* tag selector */
+label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+}
+
+/* class selector */
+.btn-row {
+    text-align: center;
+}
+
+input[type="reset"],
+input[type="submit"] {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 6px 18px;
+    margin: 0 8px;
+    border: 1px solid #888;
+    cursor: pointer;
+    width: auto;
+    background-color: bisque;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    width: 100%;
+    background-color: bisque;
+    padding: 6px 12px;
+    position: fixed;
+    bottom: 0;
+}
+
+/* id selector */
+#footer {
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    margin-right: 10px;
+}
+
+/* tag selectors */
+a { color: #8b0000; }
+a:visited { color: #5c005c; }
+a:hover { color: #cc0000; }
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 6px 0;
+}
+
+/*error*/
+.error {
+    color: red;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+
+/*password validation*/
+.pword-message {
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    position: relative;
+    left: 100px;
+    background: transparent;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: red;
+}
+
+#review {
+    margin-top: 5px;
+}
+
+/* output table  */
+table.output {
+    width: 500px;
+    background-color: rgb(247, 211, 249);
+    padding: 10px;
+    border-spacing: 4px;
+    border-radius: 20px;
+    color: #333;
+    margin: 0 auto;
+    border-collapse: separate;
+}
+
+td.outputdata {
+    background-color: rgb(200, 170, 240);
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+}
+
+
+table.output tr td:first-child {
+    text-align: right;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    color: #333;
+}
+
+table.output th {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    color: #333;
+    text-align: center;
+}
