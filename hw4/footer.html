@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+    Program name: footer.html
+    Author: Riya Deshmane
+    Date created: 3/26/26
+    Date last edited: 5/8/26
+    Version: 1.2
+    Description: Footer for Mouse Pediatrics - loaded via iframe.
+                 Uses CSS position:fixed to satisfy content protection requirement #2.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: bisque; font-family: 'Courier New', Courier, monospace; }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: bisque;
+            padding: 8px 12px;
+            text-align: right;
+            border-top: 1px solid #ccc;
+        }
+        #footer {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            margin-right: 10px;
+        }
+        a { color: #8b0000; }
+        a:visited { color: #5c005c; }
+        a:hover { color: #cc0000; }
+    </style>
+</head>
+<body>
+    <footer>
+        <p id="footer">&#169; 2026 Mouse Pediatrics &nbsp;|&nbsp;
+            <a href="mailto:contact@mousepediatrics.com" target="_blank" rel="noopener noreferrer">Contact Us!</a>
+        </p>
+    </footer>
+</body>
+</html>

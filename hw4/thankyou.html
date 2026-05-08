@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+    Program name: thankyou.html
+    Author: Riya Deshmane
+    Date created: 3/26/26
+    Date last edited: 5/8/26
+    Version: 1.1
+    Description: Thank you confirmation page for Mouse Pediatrics patient registration.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="hw4.css">
+    <title>Thank You! | Mouse Pediatrics</title>
+</head>
+<body>
+
+<header>
+    <table width="100%">
+        <tr>
+            <td align="left" valign="middle" width="15%">
+                <img src="cliniclogo1.png" alt="Mouse Pediatrics Logo" width="70px" id="logo"/>
+            </td>
+            <td align="center" valign="middle">
+                <h2>Mouse Pediatrics</h2>
+            </td>
+            <td align="right" valign="middle" width="25%">
+                <p id="today">Today's Date: <span id="dateDisplay"></span></p>
+            </td>
+        </tr>
+    </table>
+</header>
+
+<hr>
+
+<main>
+    <br>
+    <h1>Thank you for creating your account!</h1>
+</main>
+
+<iframe src="footer.html" width="100%" height="50px" frameborder="0"
+        title="footer" scrolling="no" style="display:block; border:none;"></iframe>
+
+<script>
+    var d = new Date();
+    var span = document.getElementById("dateDisplay");
+    if (span) span.innerHTML = d.toLocaleDateString();
+</script>
+
+</body>
+</html>
